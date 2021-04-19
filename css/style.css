@@ -67,6 +67,16 @@ section.home {
   z-index: 20;
 }
 
+/* footer */ 
+.footer-content {
+    position: relative;
+    bottom: 30px;
+    left: 100px;
+    font-size: 2rem;
+    font-weight: 300;
+    z-index: 10;
+  }
+
 /* MENU */
 .menu {
   position: fixed;
@@ -344,6 +354,11 @@ section.home {
   section {
     padding: 100px 40px;
   }
+
+  .footer-content {
+    padding: 100px 40px;
+  }
+
 
   .navigation ul li a {
     font-size: 2rem;
