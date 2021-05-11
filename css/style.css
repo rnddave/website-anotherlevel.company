@@ -170,8 +170,8 @@ section.home {
 .home-img {
   position: absolute;
   bottom: 0;
-  right: 0;
-  height: 110%;
+  right: 5px;
+  height: 100%;
 }
 
 /* SERVICES PAGE */
@@ -340,9 +340,10 @@ section.home {
   color: #111;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .home-img {
-    display: none;
+    height: 90%;
+    bottom: 10%;
   }
 
   .logo {
@@ -394,6 +395,19 @@ section.home {
   }
 }
 
+@media (max-width: 1190px) {
+  .home-img {
+    height: 60%;
+    bottom: 20%;
+  }
+
+@media (max-width: 1000px) {
+  .home-img {
+    height: 40%;
+    bottom: 30%;
+  }
+}
+
 @media (max-width: 768px) {
   .services {
     grid-template-columns: 1fr;
@@ -401,5 +415,11 @@ section.home {
 
   .services .service {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-img {
+    height: 15%;
+    top: 50px;
+    left: 170px;
   }
 }
