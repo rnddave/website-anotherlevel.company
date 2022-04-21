@@ -67,6 +67,11 @@ section.home {
   z-index: 20;
 }
 
+.smallHome {
+  display: none;
+}
+
+
 /* footer */ 
 .footer-content {
     position: relative;
@@ -165,13 +170,14 @@ section.home {
   position: relative;
   z-index: 10;
   max-width: 600px;
+  margin-top: 60px;
 }
 
 .home-img {
   position: absolute;
   bottom: 0;
   right: 5px;
-  height: 100%;
+  height: 80%;
 }
 
 /* SERVICES PAGE */
@@ -181,6 +187,10 @@ section.home {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   text-align: center;
+}
+
+.services-content {
+  margin-top: 60px;
 }
 
 .services .service {
@@ -256,6 +266,10 @@ section.home {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.contact-content {
+  margin-top: 60px;
 }
 
 .contact-form {
@@ -340,9 +354,15 @@ section.home {
   color: #111;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1750px) {
   .home-img {
-    height: 90%;
+    height: 60%;
+    bottom: 10%;
+  }
+
+@media (max-width: 1410px) {
+  .home-img {
+    height: 50%;
     bottom: 10%;
   }
 
@@ -395,16 +415,16 @@ section.home {
   }
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1200px) {
   .home-img {
-    height: 60%;
-    bottom: 20%;
+    height: 40%;
+    bottom: 10%;
   }
 
 @media (max-width: 1000px) {
   .home-img {
-    height: 40%;
-    bottom: 30%;
+    height: 30%;
+    bottom: 10%;
   }
 }
 
@@ -418,8 +438,12 @@ section.home {
   }
 
   .home-img {
-    height: 15%;
-    top: 50px;
-    left: 170px;
+    display: none;
   }
+
+  .smallHome {
+    display: unset;
+  }
+
+
 }
