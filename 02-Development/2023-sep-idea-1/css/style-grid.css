@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+/* global variables, so I can modify colour easily in future) */
+:root {
+    --colorPop: #237436;
+    --colorHover: #343cac;
+    --colorActive: #238af9;
+    --colourFont: #007bff;
+    --colorBackG1: #fff;
+  }
+
+*{
+    margin: 0;
+    padding: 0 2px 0 2px;
+    box-sizing: border-box;
+    text-decoration: none;  
+    background: var(--colourBackG1);
+    color: var(--colorFont);  
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo a {
+    color: var(--colorFont);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.logo a span {
+    color: var(--colorPop);
+}
+
+.sticky.logo a span{
+    color: var(--colourFont);
+}
+
+/* grid - having trouble with this... */
+
+.container, .about, .about-content, .about-title, .connect, .footer, .services, .services-title, .web3, .ml, .ds, .pm, .connect-gh, .connect-title, .connect-fb, .connect-tw, .card, .card:hover {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+/* Menu Area (currently only for logo) */
+
+.menu {
+    margin: 10px 10px 30px 10px;
+}
+
+/* content - big zone */
+
+.container {
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: stretch;
+}
+
+/* About area */
+
+.about {
+    grid-row: 1;
+    grid-column: 1 / 3 ;
+    max-width: fit-content;
+}
+
+.about-title {
+    grid-row: 1;
+    grid-column: 1 ;
+    font-size: 30px;
+    margin: 5px 0 0 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.about-content {
+    grid-row: 2 / 9;
+    grid-column: 1 ;
+}
+
+.about-content ul {
+    padding-left: 30px;
+}
+
+.about-content p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: -3px;
+}
+
+.about-content p span {
+    color: var(--colorPop);
+    font-weight: 500;
+}
+
+.about-content li {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.about-content li span {
+    color: var(--colorPop);
+    font-weight: 500;
+}
+
+.about-content .bigger {
+    font-size: 30px;
+}
+
+/* Cards (used throughout the page) */
+
+.card {
+
+    background: var(--colorActive);
+    color: var(--colorBackG1);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    padding: 2px;
+    padding-bottom: 10px;
+}
+
+.card:hover {
+    background: var(--colourBackG1);
+    color: var(--colorFont);
+    border: 2px solid var(--colorPop);
+}
+
+.card span {
+    color: var(--colorPop);
+    font-weight: 500;
+}
+
+/* servicess area */
+
+.services {
+    grid-row: 1 / 4;
+    grid-column: 3 / 5;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.services img {
+    padding-bottom: 20px;
+}
+
+.services-title {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    font-size: 30px;
+    margin: 5px 0 0 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.web3 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.ml {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.ds {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.pm {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.services .card .card:hover {
+    color: var(--colorPop);
+}
+
+/* Getting social */
+
+.connect {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.connect-title {
+    grid-row: 1;
+    grid-column: 1 ;
+    font-size: 40px;
+    margin: 5px 0 0 10px;
+    padding-bottom: 10px;
+    text-align: centre;
+}
+
+.connect .card p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.connect:hover p {
+    color: var(--colorFont);
+}
+
+.connect-fb {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    font-size: 60px;
+    color: var(--colorPop);
+    text-align: center;
+}
+
+.connect-gh {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 60px;
+    color: var(--colorPop);
+    text-align: center;
+}
+
+.connect-tw {
+    grid-row: 2;
+    grid-column: 3;
+    font-size: 60px;
+    color: var(--colorPop);
+    text-align: center;
+}
+
+/* Footer area */
+
+.footer {
+    grid-row: 5 / 6;
+    grid-column: 2 / 4;
+    font-size: 15px;
+    font-weight: 200;
+    justify-content: center;
+}
+
+.footer span {
+    color: var(--colorPop);
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .logo a {
+        color: var(--colorFont);
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-self: stretch;
+    }
+
+    .about {
+        grid-column: 1 ;
+        grid-row: 1;
+        max-width: 1fr;
+        font-size: 20px;
+    }
+
+    .services {
+        grid-column: 1 ;
+        grid-row: 2;
+        max-width: 1fr;
+    }
+
+    .connect {
+        grid-column: 1 ;
+        grid-row: 3;
+        max-width: 1fr;
+    }
+
+    .footer {
+        grid-column: 1 ;
+        grid-row: 4;
+        max-width: 1fr;
+    }
+}
