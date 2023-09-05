@@ -1,83 +1,132 @@
-<!-- // september 2023 refresh -->
-<!-- // last check >> 2023-02-22 -->
-<!-- // last check >> 2022-10-04 -->
-<!-- backup 2022-05-25 -->
-<!-- // last check >> 2022-03-29 -->
+<!DOCTYPE html>
 
-<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="images/favicon.ico" rel="icon" />
+    <link href="images/apple-touch-icon.png" rel="icon"/>
+    <link rel="stylesheet" href="css/style-grid.css"/>
+    <script src="https://kit.fontawesome.com/90dc9c0306.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <title>Another Level Scrap Metal</title>
+
 </head>
 <body>
-    <header>
-        <div class="logo"><a href="index.html"><img src="images/another-logo-top.png" class="logo-img" alt="Another Level Scrap Metal Logo" ></a></div>
-        <div class="menu"></div>
-        <div class="navigation">    
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <!--<li><a href="about.html">About Us</a></li>-->
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <div class="social-bar">
-                <ul>
-                    <li><a href="https://www.facebook.com/AnotherLevelscrapmetal/"><img src="images/facebook.png" target="_blank"alt="" title="Follow us on FaceBook"></a></li>
-                    <!--<li><a href="https://Instagram.com"><img src="images/instagram.png" target="_blank"alt="" title="Follow us on Instagram"></a></li>-->
-                    <li><a href="https://WallaceAndWang.com"><img src="images/powered-by-wandw-black.png" target="_blank"alt="Wallace and Wang logo" title="We're Powered by Wallace & Wang Ltd"></a></li>
-                    
-                </ul>
-                <a href="mailto:sales@anotherlevel.company" class="email-icon"><img src="images/email.png" alt="" title="Send us an Email"></a>
-            </div>
-        </div>
-    </header>
 
-    <section class="home">
-        <img src="images/al-fleet-01.jpg" class="home-img" alt="Another Level Scrap Metal Logo">
-        <div class="home-content">
-            <h1>Call us: 07854 456381</h1>
-            <p>
-                We are a family run business operating in the Black Country. <br>
-                As a family run business, we're known to be trustworthy and reliable.
-                Reputation is important to us, we established this business based on 'Word of Mouth' and our customers speak highly of us.
-                Look at the <a href="services.html">Services</a> page to find out what services we're known for.
-            </p>
-            <a href="contact.html" class="btn">Contact us for more info!</a>
-            <div class="smallHome"> <h1>Call us: 07854 456381            </h1></div>
+    <section class="menu">
+        <div class="menu-content">
+            <div class="logo"><a href"#"><img src="images/another-logo-top.png" alt="another level" /></a></div>
         </div>
-
     </section>
 
-    <!-- <footer>
-        <div class="footer-content">
-                <p>Content is &copy; <b>Another Level Scrap Metal</b><br>
-                Website powered by <img src="images/powered-by-wandw.png" alt="Wallace and Wang logo"> <a href="http://www.wallaceandwang.com/" target="_blank" title="See how Wallace and Wang Ltd can help your business!">Wallace and Wang Ltd</a></p>
-        </div>
-    </footer> -->
+    <div class="container">
+        <section class="about">
+            <!--About me-->
+            <div class="card" >
+                <div class="about-title">
+                    <p>What can we do for you?</p>
+                </div>
+                <div class="about-content">
+                    <p>👋 We are a family run business operating in the Black Country. </p>
+                        <p>As a family run business, we're known to be trustworthy and reliable.</p>
+                        <p>Reputation is important to us, we established this business based on 'Word of Mouth' and our customers speak highly of us.</p>
+                </div>
+            </div>
+        </section>
 
-    <script src="js/style.js"></script>
+
+        <section class="services">
+            <!--Links to services-->
+            <div class="card">
+                <div class="services-title">
+                    <p class="text-2">Call us on 07854 456 381</p>
+                </div>
+                <div class="web3">
+                    <div class="card">
+                        <div class="box"> 
+                            <a href="https://www.facebook.com/AnotherLevelscrapmetal" title="Domestic Scrap"><img src="images/al-scrap-metal-04.jpg" alt="We can collect Domestic Scrap" width="150"/> </a>
+                            <div class="text-2">
+                                <p>Domestic Scrap</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml">
+                    <div class="card">
+                        <div class="box">
+                            <a href="https://www.facebook.com/AnotherLevelscrapmetal" title="Commercial Scrap"><img src="images/al-commercial-scrap.jpg" alt="We can collect Commercial Scrap" width="150"/> </a>
+                            <div class="text-2">
+                                <p>Commercial Scrap</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ds">
+                    <div class="card">
+                        <div class="box">
+                            <a href="https://www.facebook.com/AnotherLevelscrapmetal" title="Vehicle Recovery"><img src="images/al-recovery-04.jpg" alt="We can help recover your vehicle" width="150"/> </a>
+                            <div class="text-2">
+                                <p>Vehicle Recovery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pm">
+                    <div class="card">
+                        <div class="box">
+                            <a href="https://www.facebook.com/AnotherLevelscrapmetal" title="Sell Valuable Metals"><img src="images/al-valuable-metals.jpg" alt="Sell valuable metals to us" width="150"/> </a>
+                            <div class="text-2">
+                                <p>Buying unwanted metals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="connect">
+            <!--Social Jazz-->
+            <div class="card">
+                <div class="connect-title">
+                    <p> </p>
+                </div>
+                <div class="connect-fb">
+                    <div class="card">
+                        <a href="https://www.facebook.com/AnotherLevelscrapmetal" target="_blank" alt="" title="Connect with us on FaceBook"><span><i class="fab fa-facebook"></i></span> 
+                        </a> 
+                        <p>Connect with us on FaceBook</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <!--Playing Footsee-->
+            <p>
+                <a href"#"><img src="images/another-logo-top.png" alt="another level" width="80"/></a> website by <a href="https://www.wallaceandwang.com" title="Wallace and Wang"><img src="images/powered-by-wandw-black.png" alt="Wallace and Wang Logo" width="50"/> </a>
+            </p>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSL354K9CS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BSL354K9CS');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSL354K9CS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-BSL354K9CS');
+    </script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVPPMP0JT1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FVPPMP0JT1');
-</script>
-    </body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVPPMP0JT1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-FVPPMP0JT1');
+    </script>
+</body>
 </html>
